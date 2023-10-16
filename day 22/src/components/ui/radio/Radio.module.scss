@@ -1,0 +1,36 @@
+.options {
+  &__item {
+  }
+  &__input {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    position: relative;
+  }
+  &__input::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #7a5cfa;
+    border-radius: 15px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    scale: 0;
+    transition: scale 0.6s;
+  }
+  &__input:checked::before {
+    scale: (1);
+  }
+  &__label {
+    vertical-align: top;
+    margin-left: 16px;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

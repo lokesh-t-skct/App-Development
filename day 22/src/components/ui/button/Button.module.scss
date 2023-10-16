@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  width: 140px;
+  height: 56px;
+  padding: 16px;
+  color: var(--W-Background, #fff);
+  font-size: 16px;
+  line-height: 24px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--Keatext-purple, #7a5cfa);
+  cursor: pointer;
+  align-self: end;
+  border: #7a5cfa;
+  &__cancel {
+    border: 1px solid var(--Keatext-purple, #7a5cfa);
+    background: #fff;
+    color: #7a5cfa;
+  }
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.button[disabled] {
+  opacity: 0.5;
+}

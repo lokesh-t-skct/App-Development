@@ -1,0 +1,27 @@
+/* Categories.css */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category {
+  text-align: center;
+}
+
+.category img {
+  max-width: 200px;
+  height: auto;
+}
+
+.title{
+    font-size: 24px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+  padding-top: 50px;
+}
+
+.title.dark{
+  
+  color: rgb(0, 0, 0);
+}
